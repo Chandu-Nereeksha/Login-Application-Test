@@ -15,7 +15,7 @@ void main() {
     Finder title = find.byKey(const ValueKey('title'));
 
     //Asset
-    expect(title, findsNothing);
+    expect(title, findsOneWidget);
   });
 
   testWidgets("Should have one text field form to collect user email id",
