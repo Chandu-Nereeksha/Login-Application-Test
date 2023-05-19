@@ -1,5 +1,6 @@
 class Validator {
   static String? validateEmail(String email) {
+    var msg;
     if (email.isEmpty) {
       return "Required Field";
     }
