@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 decoration: const InputDecoration(hintText: "Enter Password"),
                 validator: (value) => Validator.validatePassword(value ?? ""),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               ElevatedButton(
@@ -50,11 +50,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
+                            builder: (context) => const HomeScreen(),
                           ));
                     }
                   },
-                  child: Text("Login"))
+                  child: const Text("Login"))
             ],
           ),
         ),

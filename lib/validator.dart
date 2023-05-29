@@ -12,6 +12,7 @@ class Validator {
     if (!regExp.hasMatch(email)) {
       return "Please enter a valid email id";
     }
+    return null;
   }
 
   static String? validatePassword(String password) {
@@ -22,5 +23,6 @@ class Validator {
     if (password.length < 8) {
       return "Please enter atleast 8 charater for password";
     }
+    return null;
   }
 }
